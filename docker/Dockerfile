@@ -64,9 +64,9 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 FROM overlay as dev
 
 # Dev container arguments
-ARG USERNAME=devuser
-ARG UID=1000
-ARG GID=${UID}
+ARG USERNAME=${USERNAME}
+ARG UID=${UID}
+ARG GID=${GID}
 
 # Install extra tools for development
 RUN apt-get update && apt-get install -y --no-install-recommends \

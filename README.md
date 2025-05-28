@@ -15,7 +15,7 @@ Adjust the `env` file:
 
 ```bash
 docker compose build dev
-docker compose up dev
+docker compose up dev (-d to run in background)
 docker exec -it $name_of_container bash
 ```
 
@@ -51,5 +51,5 @@ TBC...
 
 ```bash
 ros2 bag info <bag_file_name>
-ros2 bag play <bag_file_name>
+ros2 bag play <bag_file_name> -l
 ```
